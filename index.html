@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de imagens Front end</title>
+    <link rel="stylesheet" href="css/css_index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81fb345729.js" crossorigin="anonymous"></script>
+    <script src="js/js.js" defer></script>
+</head>
+
+<body class="layout">
+    <main>
+        <section>
+
+            <header class="topo">
+
+                <h2>Galeria de imagens</h2>
+                <span>Front-end</span>
+
+            </header>
+
+            <section class="galeria">
+
+                <div class="imagem_galeria">
+
+                    <figure class="myImg">
+                        <img class="imagem_galeria_itens" src="img/html.png" alt="Html" title="Html" onclick="abrirGaleria('img/html.png')">
+                        <span>Html - linguagem de marcação de texto</span>
+                    </figure>
+
+
+                    <!-- Abrindo a imagem em um modal -->
+
+                    <div class="modal" onclick="fecharGaleria()">
+
+                        <span class="close">&times;</span>
+
+                        <img src="" alt="" class="modal-content">
+
+                    </div>
+
+                </div>
+                <!------------------------------------------------------------------------------------------------->
+                <div class="imagem_galeria">
+
+                    <figure class="myImg">
+                        <img class="imagem_galeria_itens" src="img/css.png" alt="Css" title="Css" onclick="abrirGaleria('img/css.png')">
+                        <span>Css - linguagem de estilização de paginas Html</span>
+                    </figure>
+
+                    <!-- Abrindo a imagem em um modal -->
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img_css">
+
+                    </div>
+
+                </div>
+                <!------------------------------------------------------------------------------------------------->
+                <div class="imagem_galeria">
+
+                    <figure class="myImg">
+                        <img class="imagem_galeria_itens" src="img/js.png" alt="JavaScript" title="JavaScript" onclick="abrirGaleria('img/js.png')">
+                        <span>JavaScript - Linguagem de programação para dinamização de paginas web</span>
+                    </figure>
+
+                    <!-- Abrindo a imagem em um modal -->
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img_js">
+
+                    </div>
+
+                </div>
+                <!------------------------------------------------------------------------------------------------->
+                <div class="imagem_galeria">
+
+                    <figure class="myImg">
+                        <img class="imagem_galeria_itens" src="img/react.png" alt="React" title="React" onclick="abrirGaleria('img/react.png')">
+                        <span>React - biblioteca(framework) de java script para auxilio de desenvolvimento
+                            de paginas Single Page Application(SPA)</span>
+                    </figure>
+
+                    <!-- Abrindo a imagem em um modal -->
+                    <div id="myModal" class="modal">
+
+                        <span class="close">&times;</span>
+
+                        <img class="modal-content" id="img_react">
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape" id="rodape">
+        
+        <div class="rodapeRedessociais">
+
+            <div class="redesSociais">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fab fa-whatsapp-square fa-2x"></i>
+                </a>
+            </div>
+                
+            <div class="redesSociais">
+                <a href="https://www.linkedin.com/in/diogenes-oliveira-3b3a2b249/" target="_blank">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
+                
+            <div class="redesSociais">
+                <a  href="https://github.com/DiogenesDv" target="_blank">
+                    <i class="fab fab fa-github fa-2x"></i>
+                </a>
+            </div>
+
+        </div>
+
+        					
+        <div class="RodapenomeFinal">
+            <span>Desenvolvido por Diogenes Oliveira</span>
+        </div>     
+    
+    </footer>
+</body>
+
+</html>

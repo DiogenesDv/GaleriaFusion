@@ -1,0 +1,88 @@
+@import url(css_imagens.css);
+
+/*******************Corpo****************************/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;    
+    overflow-x: hidden;
+}
+
+main{
+    background-image: url(../img/BG.gif);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+}
+
+
+.topo{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: #d2d2d2;
+    box-shadow: 0px 10px 10px #707070;
+    margin-bottom: 30px;
+    border-radius: 5%;
+}
+
+.topo h2{
+    color: darkturquoise;
+    text-shadow: 1px 1px 2px #303030;
+    font-weight: 600;
+}
+
+.topo span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px darkturquoise;
+}
+
+.corpo{
+    width: 100vw;
+    height: auto;
+}
+
+
+/********************Rodape**************************/
+.rodape{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #d2d2d2;
+    box-shadow: 0px -10px 10px #636363;
+
+}
+
+.rodapeRedessociais{
+    display: flex;  
+}
+
+.redesSociais a{
+    margin-left: 5px;
+}
+
+.redesSociais a i{
+    color: #034b99;
+}
+
+.RodapenomeFinal{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 320px){
+    .topo{
+        width: 100%;
+    }
+}
